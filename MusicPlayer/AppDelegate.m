@@ -31,6 +31,11 @@
     arrowView.image = [UIImage imageNamed:@"arrow"];
     [self.window addSubview:arrowView];
 
+    // Ministry of fun image
+    UIImageView *ministryView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 57, windowWidth, 28)];
+    ministryView.image = [UIImage imageNamed:@"ministry"];
+    [self.window addSubview:ministryView];
+
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
