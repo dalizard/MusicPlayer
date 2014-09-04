@@ -36,6 +36,13 @@
     ministryView.image = [UIImage imageNamed:@"ministry"];
     [self.window addSubview:ministryView];
 
+    // Add song button
+    UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [addButton setImage:[UIImage imageNamed:@"add-button"] forState:UIControlStateNormal];
+    [addButton setImage:[UIImage imageNamed:@"add-button-pressed"] forState:UIControlStateHighlighted];
+    [addButton setFrame:CGRectMake(0, 102, windowWidth, 45)];
+    [self.window addSubview:addButton];
+
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
