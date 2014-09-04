@@ -43,6 +43,35 @@
     [addButton setFrame:CGRectMake(0, 102, windowWidth, 45)];
     [self.window addSubview:addButton];
 
+    // Katy Perry row
+    UIImageView *firstRow =
+    [[UIImageView alloc] initWithFrame:CGRectMake(0, 170, windowWidth, 80)];
+    firstRow.image = [UIImage imageNamed:@"1st-row"];
+    [self.window addSubview:firstRow];
+
+    // Shakira row
+    UIImageView *secondRow =
+    [[UIImageView alloc] initWithFrame:CGRectMake(0, 170+80, windowWidth, 80)];
+    secondRow.image = [UIImage imageNamed:@"2nd-row"];
+    [self.window addSubview:secondRow];
+
+    // Pitbull row
+    UIImageView *thirdRow =
+    [[UIImageView alloc] initWithFrame:CGRectMake(0, 170+160, windowWidth, 80)];
+    thirdRow.image = [UIImage imageNamed:@"3rd-row"];
+    [self.window addSubview:thirdRow];
+
+    // Lana del Rey row
+    UIImageView *fourthRow =
+    [[UIImageView alloc] initWithFrame:CGRectMake(0, 170+240, windowWidth, 80)];
+    fourthRow.image = [UIImage imageNamed:@"4th-row"];
+    [self.window addSubview:fourthRow];
+
+    // HEX row
+    UIImageView *fifthRow =
+    [[UIImageView alloc] initWithFrame:CGRectMake(0, 170+320, windowWidth, 80)];
+    fifthRow.image = [UIImage imageNamed:@"5th-row"];
+    [self.window addSubview:fifthRow];
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
