@@ -76,8 +76,12 @@
 
 
 
+    CGFloat initialDelay = 1.0f;
+    CGFloat stutter = 0.3f;
+
+    // Animate the top arrow image
     [UIView animateWithDuration:2.1
-                          delay:0
+                          delay:initialDelay
          usingSpringWithDamping:0.6
           initialSpringVelocity:0
                         options:0
@@ -85,6 +89,20 @@
                          [arrowView setFrame:CGRectMake(0, 0, windowWidth, 45)];
                      }
                      completion:NULL];
+
+    // Animate the image label Ministry of Fun
+    [UIView animateWithDuration:2.1
+                          delay:initialDelay + (1 * stutter)
+         usingSpringWithDamping:0.6
+          initialSpringVelocity:0
+                        options:0
+                     animations:^{
+                         [ministryView setFrame:CGRectMake(0, 57, windowWidth, 28)];
+                     }
+                     completion:NULL];
+
+
+
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
