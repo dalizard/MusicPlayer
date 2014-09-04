@@ -73,6 +73,19 @@
     fifthRow.image = [UIImage imageNamed:@"5th-row"];
     [self.window addSubview:fifthRow];
 
+
+
+
+    [UIView animateWithDuration:2.1
+                          delay:0
+         usingSpringWithDamping:0.6
+          initialSpringVelocity:0
+                        options:0
+                     animations:^{
+                         [arrowView setFrame:CGRectMake(0, 0, windowWidth, 45)];
+                     }
+                     completion:NULL];
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
