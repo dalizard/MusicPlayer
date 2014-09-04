@@ -15,6 +15,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
+    // Hide the status bar
+    [application setStatusBarHidden:YES];
+
     // Define a variable to get the full width of the window as we'll be using this value a lot
     CGFloat windowWidth = self.window.bounds.size.width;
 
