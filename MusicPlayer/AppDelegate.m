@@ -27,12 +27,12 @@
     [self.window addSubview:backgroundView];
 
     // Add the arrow and top label
-    UIImageView *arrowView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, windowWidth, 45)];
+    UIImageView *arrowView = [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, 0, windowWidth, 45)];
     arrowView.image = [UIImage imageNamed:@"arrow"];
     [self.window addSubview:arrowView];
 
     // Ministry of fun image
-    UIImageView *ministryView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 57, windowWidth, 28)];
+    UIImageView *ministryView = [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, 57, windowWidth, 28)];
     ministryView.image = [UIImage imageNamed:@"ministry"];
     [self.window addSubview:ministryView];
 
@@ -40,36 +40,36 @@
     UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [addButton setImage:[UIImage imageNamed:@"add-button"] forState:UIControlStateNormal];
     [addButton setImage:[UIImage imageNamed:@"add-button-pressed"] forState:UIControlStateHighlighted];
-    [addButton setFrame:CGRectMake(0, 102, windowWidth, 45)];
+    [addButton setFrame:CGRectMake(windowWidth, 102, windowWidth, 45)];
     [self.window addSubview:addButton];
 
     // Katy Perry row
     UIImageView *firstRow =
-    [[UIImageView alloc] initWithFrame:CGRectMake(0, 170, windowWidth, 80)];
+    [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, 170, windowWidth, 80)];
     firstRow.image = [UIImage imageNamed:@"1st-row"];
     [self.window addSubview:firstRow];
 
     // Shakira row
     UIImageView *secondRow =
-    [[UIImageView alloc] initWithFrame:CGRectMake(0, 170+80, windowWidth, 80)];
+    [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, 170+80, windowWidth, 80)];
     secondRow.image = [UIImage imageNamed:@"2nd-row"];
     [self.window addSubview:secondRow];
 
     // Pitbull row
     UIImageView *thirdRow =
-    [[UIImageView alloc] initWithFrame:CGRectMake(0, 170+160, windowWidth, 80)];
+    [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, 170+160, windowWidth, 80)];
     thirdRow.image = [UIImage imageNamed:@"3rd-row"];
     [self.window addSubview:thirdRow];
 
     // Lana del Rey row
     UIImageView *fourthRow =
-    [[UIImageView alloc] initWithFrame:CGRectMake(0, 170+240, windowWidth, 80)];
+    [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, 170+240, windowWidth, 80)];
     fourthRow.image = [UIImage imageNamed:@"4th-row"];
     [self.window addSubview:fourthRow];
 
     // HEX row
     UIImageView *fifthRow =
-    [[UIImageView alloc] initWithFrame:CGRectMake(0, 170+320, windowWidth, 80)];
+    [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, 170+320, windowWidth, 80)];
     fifthRow.image = [UIImage imageNamed:@"5th-row"];
     [self.window addSubview:fifthRow];
 
