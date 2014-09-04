@@ -77,7 +77,7 @@
 
 
     CGFloat initialDelay = 1.0f;
-    CGFloat stutter = 0.3f;
+    CGFloat stutter = 0.06f;
 
     // Animate the top arrow image
     [UIView animateWithDuration:2.1
@@ -101,6 +101,35 @@
                      }
                      completion:NULL];
 
+    [UIView animateWithDuration:2.1 delay:initialDelay + (2 * stutter)
+         usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+             [addButton setFrame:CGRectMake(0, 102, windowWidth, 45)];
+         } completion:NULL];
+
+    [UIView animateWithDuration:2.1 delay:initialDelay + (3 * stutter)
+         usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+             [firstRow setFrame:CGRectMake(0, 170, windowWidth, 80)];
+         } completion:NULL];
+
+    [UIView animateWithDuration:2.1 delay:initialDelay + (4 * stutter)
+         usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+             [secondRow setFrame:CGRectMake(0, 170+80, windowWidth, 80)];
+         } completion:NULL];
+
+    [UIView animateWithDuration:2.1 delay:initialDelay + (5 * stutter)
+         usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+             [thirdRow setFrame:CGRectMake(0, 170+160, windowWidth, 80)];
+         } completion:NULL];
+
+    [UIView animateWithDuration:2.1 delay:initialDelay + (6 * stutter)
+         usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+             [fourthRow setFrame:CGRectMake(0, 170+240, windowWidth, 80)];
+         } completion:NULL];
+
+    [UIView animateWithDuration:2.1 delay:initialDelay + (7 * stutter)
+         usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+             [fifthRow setFrame:CGRectMake(0, 170+320, windowWidth, 80)];
+         } completion:NULL];
 
 
 
